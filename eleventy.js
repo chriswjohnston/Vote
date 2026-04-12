@@ -7,9 +7,6 @@ module.exports = function (eleventyConfig) {
   // Copy news.json to _site root so the ticker can fetch it
   eleventyConfig.addPassthroughCopy({ "src/news.json": "news.json" });
 
-  // ── Ignore ─────────────────────────────────────────────
-  // Components and layouts are includes — never output as pages
-  eleventyConfig.ignores.add("src/_includes/**");
 
   // ── Config ─────────────────────────────────────────────
   return {
