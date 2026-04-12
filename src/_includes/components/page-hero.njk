@@ -1,1 +1,29 @@
-{# Component: page-hero #}
+{# ════════════════════════════════════════
+   Component: page-hero.njk
+
+   Usage — set in page front matter:
+
+   heroEyebrow: "Accountability · Project Track Record"
+   heroTitle: "When Projects Go Wrong"
+   heroTitleItalic: "and No One Asks Why"   (optional)
+   heroLead: "Nipissing Township has a documented pattern..."  (optional)
+
+   ════════════════════════════════════════ #}
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+
+    {% if heroEyebrow %}
+      <div class="page-hero-eyebrow">{{ heroEyebrow }}</div>
+    {% endif %}
+
+    <h1 class="page-hero-title">
+      {{ heroTitle }}{% if heroTitleItalic %}<br><em>{{ heroTitleItalic }}</em>{% endif %}
+    </h1>
+
+    {% if heroLead %}
+      <p class="page-hero-lead">{{ heroLead }}</p>
+    {% endif %}
+
+  </div>
+</div>
