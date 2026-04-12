@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
 
-  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/news.json": "news.json" });
 
   return {
