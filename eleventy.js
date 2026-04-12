@@ -1,20 +1,16 @@
+const path = require("path");
+
 module.exports = function (eleventyConfig) {
 
-  // ── Passthrough ────────────────────────────────────────
-  // Copy assets to _site untouched — no processing
   eleventyConfig.addPassthroughCopy("src/assets");
-
-  // Copy news.json to _site root so the ticker can fetch it
   eleventyConfig.addPassthroughCopy({ "src/news.json": "news.json" });
 
-
-  // ── Config ─────────────────────────────────────────────
   return {
     dir: {
-      input:    "src/pages",      // Eleventy reads pages from here
-      includes: "../_includes",   // Components and layouts (relative to input)
-      data:     "../_data",       // nav.js and any other data files
-      output:   "_site"           // Built site output (git-ignored)
+      input:    "src/pages",
+      includes: "../../src/_includes",
+      data:     "../../src/_data",
+      output:   "_site"
     },
     htmlTemplateEngine:     "njk",
     markdownTemplateEngine: "njk",
