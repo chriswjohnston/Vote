@@ -1,1 +1,103 @@
-{# Component: stay-informed #}
+{# ════════════════════════════════════════
+   Component: stay-informed.njk
+
+   Email signup via Sender.net (explicit
+   render mode — no flash of default styles).
+
+   The Sender script loads in the base
+   layout before </body>. This component
+   triggers render only after campaign
+   styles are applied.
+
+   Optional front matter overrides:
+   stayInformedTitle: "Custom Title"
+   stayInformedDesc:  "Custom description"
+   ════════════════════════════════════════ #}
+
+<section class="stay-informed">
+  <div class="stay-informed-inner">
+
+    <span class="stay-informed-label">Stay Informed</span>
+
+    <h2 class="stay-informed-title">
+      {{ stayInformedTitle if stayInformedTitle else "Township Updates in Your Inbox" }}
+    </h2>
+
+    <p class="stay-informed-desc">
+      {{ stayInformedDesc if stayInformedDesc else "Every two weeks — the latest Nipissing Township news and a summary of the most recent council meeting." }}
+    </p>
+
+    <div class="stay-informed-form-wrap">
+      <div class="sender-form-field" data-sender-form-id="e1wkgR"></div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .sender-form-field .sender-form-body { background: transparent !important; padding: 0 !important; border: none !important; box-shadow: none !important; }
+  .sender-form-field form { display: flex !important; gap: 0.75rem !important; justify-content: center !important; flex-wrap: wrap !important; margin: 0 !important; }
+  .sender-form-field input[type="email"] {
+    flex: 1 !important;
+    min-width: 220px !important;
+    max-width: 320px !important;
+    padding: 0.8rem 1rem !important;
+    border: 2px solid rgba(44,74,62,0.18) !important;
+    border-radius: 6px !important;
+    font-family: 'Lato', system-ui, sans-serif !important;
+    font-size: 0.95rem !important;
+    background: #FFFFFF !important;
+    color: #1c1c1c !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+  .sender-form-field input[type="email"]::placeholder { color: #bbb !important; }
+  .sender-form-field input[type="email"]:focus { border-color: #3D6B5E !important; }
+  .sender-form-field button[type="submit"],
+  .sender-form-field input[type="submit"] {
+    background: #C06830 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 0.8rem 1.75rem !important;
+    font-family: 'Lato', system-ui, sans-serif !important;
+    font-size: 0.82rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.1em !important;
+    text-transform: uppercase !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+    box-shadow: none !important;
+  }
+  .sender-form-field button[type="submit"]:hover,
+  .sender-form-field input[type="submit"]:hover { background: #A8552A !important; }
+  .sender-form-field .sender-form-note,
+  .sender-form-field .sender-form-success { font-family: 'Lato', system-ui, sans-serif !important; font-size: 0.85rem !important; color: #6e6e6e !important; margin-top: 0.75rem !important; text-align: center !important; }
+  .sender-form-field .sender-form-success { color: #3D6B5E !important; font-weight: 700 !important; }
+
+  @media (max-width: 480px) {
+    .sender-form-field form { flex-direction: column !important; align-items: center !important; }
+    .sender-form-field input[type="email"] { max-width: 100% !important; }
+    .sender-form-field button[type="submit"],
+    .sender-form-field input[type="submit"] { width: 100% !important; }
+  }
+</style>
+
+<script>
+  // Render Sender form explicitly once styles are applied
+  function renderSenderForm() {
+    if (window.senderForms) {
+      senderForms.render("e1wkgR");
+    } else {
+      window.addEventListener("onSenderFormsLoaded", function () {
+        senderForms.render("e1wkgR");
+      });
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderSenderForm);
+  } else {
+    renderSenderForm();
+  }
+</script>
