@@ -1,17 +1,29 @@
 {# ════════════════════════════════════════
    Component: page-hero.njk
 
-   Usage — set in page front matter:
+   Includes breadcrumb automatically.
+   Breadcrumb only renders if page front
+   matter defines breadcrumbs array.
 
-   heroEyebrow: "Accountability · Project Track Record"
+   Required front matter:
    heroTitle: "When Projects Go Wrong"
-   heroTitleItalic: "and No One Asks Why"   (optional)
-   heroLead: "Nipissing Township has a documented pattern..."  (optional)
 
+   Optional:
+   heroEyebrow: "Accountability · Project Track Record"
+   heroTitleItalic: "and No One Asks Why"
+   heroLead: "Nipissing Township has a documented pattern..."
+
+   breadcrumbs:
+     - label: "Priorities"
+       url: "/priorities/"
+     - label: "CAO Recruitment"
    ════════════════════════════════════════ #}
 
 <div class="page-hero">
   <div class="page-hero-inner">
+
+    {# Breadcrumb sits above eyebrow — only renders if defined #}
+    {% include "components/breadcrumb.njk" %}
 
     {% if heroEyebrow %}
       <div class="page-hero-eyebrow">{{ heroEyebrow }}</div>
