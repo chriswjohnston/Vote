@@ -69,30 +69,43 @@ description: "Chris Johnston is a candidate for Nipissing Township Council in th
   animation: fadeUp 0.7s ease 0.5s forwards;
 }
 
-.home-hero-tagline {
-  font-size: 1rem;
+.home-hero-hook {
+  font-size: 1.05rem;
   font-weight: 400;
-  color: rgba(255,255,255,0.9);
-  line-height: 1.7;
-  margin-bottom: 0.75rem;
+  color: rgba(255,255,255,0.95);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
   opacity: 0;
   animation: fadeUp 0.7s ease 0.65s forwards;
 }
-.home-hero-tagline em {
+.home-hero-hook em {
   font-style: normal;
   color: var(--warm);
   font-weight: 700;
 }
 
 .home-hero-body {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 300;
-  color: rgba(255,255,255,0.72);
+  color: rgba(255,255,255,0.62);
   line-height: 1.8;
   max-width: 420px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
   opacity: 0;
   animation: fadeUp 0.7s ease 0.8s forwards;
+}
+
+.home-hero-pledge {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--gold);
+  opacity: 0;
+  animation: fadeUp 0.7s ease 0.95s forwards;
 }
 
 .home-hero-ctas {
@@ -369,14 +382,15 @@ description: "Chris Johnston is a candidate for Nipissing Township Council in th
       <em>Johnston</em>
     </h1>
     <p class="home-hero-subtitle">Candidate for Nipissing Township Council</p>
-    <p class="home-hero-body">
-      Most people don't follow every council meeting. That's okay — you shouldn't have to.
+    <p class="home-hero-hook">
+      Most people don't follow every council meeting.<br>
+      <em>That's okay — you shouldn't have to.</em>
     </p>
     <p class="home-hero-body">
       But when you're not watching, you need to trust the people in that room to ask hard questions, spend your money carefully, and tell you what happened.
     </p>
-    <p class="home-hero-body">
-      I've been watching. I've been documenting. Elect me and I'll be the one in that room you can actually trust.
+    <p class="home-hero-pledge">
+      I've been watching. I've been documenting.<br>Elect me and I'll be the one in that room you can actually trust.
     </p>
     <div class="home-hero-ctas">
       <a href="#priorities" class="btn btn-primary">My Four Priorities</a>
@@ -480,18 +494,8 @@ description: "Chris Johnston is a candidate for Nipissing Township Council in th
   </div>
 </section>
 
-{# ── VISION PULLQUOTE ── #}
-<section class="vision">
-  <div class="vision-inner">
-    <blockquote class="vision-quote">
-      My son will grow up in this township. That's not an abstract commitment — it's personal. I want to help build the kind of place he'll be proud to call home for decades to come.
-    </blockquote>
-    <cite class="vision-cite">— Chris Johnston, Candidate for Nipissing Township Council</cite>
-  </div>
-</section>
-
 {# ── COMMUNITY VOICES ── #}
-<section class="voices">
+<section class="voices" style="background: var(--white);">
   <div class="container">
     <span class="section-label">What I'm Hearing</span>
     <h2 class="section-title">The Community Has Been Saying This for Years.</h2>
@@ -517,28 +521,6 @@ description: "Chris Johnston is a candidate for Nipissing Township Council in th
         <h3>Better Roads</h3>
         <p>The most consistent thing I hear. Transportation services is already the largest expense in the Township — $1.9M in 2025. Residents want to see that investment produce results, and honest reporting when it does and doesn't.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-{# ── IMPACT STRIP ── #}
-<section class="impact-strip">
-  <div class="impact-strip-inner">
-    <div class="impact-cell">
-      <span class="impact-num">$189K</span>
-      <span class="impact-label"><em>Spent on software.</em><br>Abandoned 3 years later.</span>
-    </div>
-    <div class="impact-cell">
-      <span class="impact-num">0</span>
-      <span class="impact-label"><em>Questions asked</em><br>at the April 7 meeting.</span>
-    </div>
-    <div class="impact-cell">
-      <span class="impact-num">3×</span>
-      <span class="impact-label"><em>Uncontested mayoral races</em><br>in a row. Same person.</span>
-    </div>
-    <div class="impact-cell">
-      <span class="impact-num">1</span>
-      <span class="impact-label"><em>Ombudsman finding</em><br>council broke the law.</span>
     </div>
   </div>
 </section>
