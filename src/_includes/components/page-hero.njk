@@ -1,9 +1,8 @@
 {# ════════════════════════════════════════
    Component: page-hero.njk
 
-   Includes breadcrumb automatically.
-   Breadcrumb only renders if page front
-   matter defines breadcrumbs array.
+   Breadcrumb sits at the bottom of the
+   hero, after the lead text.
 
    Required front matter:
    heroTitle: "When Projects Go Wrong"
@@ -22,9 +21,6 @@
 <div class="page-hero">
   <div class="page-hero-inner">
 
-    {# Breadcrumb sits above eyebrow — only renders if defined #}
-    {% include "components/breadcrumb.njk" %}
-
     {% if heroEyebrow %}
       <div class="page-hero-eyebrow">{{ heroEyebrow }}</div>
     {% endif %}
@@ -36,6 +32,9 @@
     {% if heroLead %}
       <p class="page-hero-lead">{{ heroLead }}</p>
     {% endif %}
+
+    {# Breadcrumb at bottom — only renders if defined in front matter #}
+    {% include "components/breadcrumb.njk" %}
 
   </div>
 </div>
