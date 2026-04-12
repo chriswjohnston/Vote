@@ -628,18 +628,44 @@ section {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-.page-hero h1 {
+
+/* Eyebrow — gold rule + uppercase label */
+.page-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1.25rem;
+}
+.page-hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Title */
+.page-hero-title {
   font-family: var(--font-display);
-  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.15;
-  margin-bottom: 1rem;
+  line-height: 1.12;
+  margin-bottom: 1.25rem;
 }
-.page-hero h1 em {
+.page-hero-title em {
   font-style: italic;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.62);
+  display: block;
 }
+
+/* Lead */
 .page-hero-lead {
   font-size: 1rem;
   font-weight: 300;
