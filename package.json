@@ -1,0 +1,12 @@
+{
+  "name": "vote-chriswjohnston",
+  "version": "1.0.0",
+  "description": "Campaign site for Chris Johnston — Nipissing Township Council 2026",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
