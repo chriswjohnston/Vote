@@ -1,5 +1,3 @@
-const path = require("path");
-
 module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/assets");
@@ -7,9 +5,9 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input:    "src/pages",
-      includes: "../../src/_includes",
-      data:     "../../src/_data",
+      input:    "src",
+      includes: "_includes",
+      data:     "_data",
       output:   "_site"
     },
     htmlTemplateEngine:     "njk",
