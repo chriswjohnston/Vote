@@ -1108,7 +1108,103 @@ section {
 }
 
 
-/* ── 16. CASE STUDY ─────────────────────────────────────── */
+/* ── 16. EXAMPLE CARD ───────────────────────────────────── */
+.example-card {
+  background: var(--white);
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  transition: box-shadow var(--transition);
+}
+.example-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.09);
+}
+
+/* Header — dark green band */
+.example-card-header {
+  background: var(--forest);
+  padding: 1.25rem 1.75rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.example-num {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--warm);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.example-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.3;
+}
+
+/* Body */
+.example-card-body {
+  padding: 1.5rem 1.75rem;
+}
+
+.example-copy {
+  font-size: 0.93rem;
+  line-height: 1.78;
+  color: var(--body);
+  margin-bottom: 1.25rem;
+}
+
+/* How It Should Work — visually distinct */
+.example-how {
+  background: var(--pine-lt);
+  border-left: 4px solid var(--pine);
+  border-radius: 0 6px 6px 0;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.example-how-label {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--pine);
+  margin-bottom: 0.5rem;
+}
+
+.example-how-body {
+  font-size: 0.9rem;
+  line-height: 1.72;
+  color: var(--body);
+  margin: 0;
+}
+
+/* Case study link */
+.example-link {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pine);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(61,107,94,0.3);
+  padding-bottom: 1px;
+  transition: color var(--transition), border-color var(--transition);
+}
+.example-link:hover {
+  color: var(--forest);
+  border-color: var(--forest);
+}
+
+
+/* ── 17. CASE STUDY ─────────────────────────────────────── */
 .case-study {
   padding: var(--section-pad-v) var(--section-pad-h);
   background: var(--bg);
@@ -1326,7 +1422,7 @@ section {
 }
 
 
-/* ── 17. CTA ────────────────────────────────────────────── */
+/* ── 18. CTA ────────────────────────────────────────────── */
 .cta {
   background: var(--bg);
   padding: var(--section-pad-v) var(--section-pad-h);
@@ -1360,7 +1456,7 @@ section {
 }
 
 
-/* ── 18. CONTACT ────────────────────────────────────────── */
+/* ── 19. CONTACT ────────────────────────────────────────── */
 .contact {
   background: var(--charcoal);
   padding: var(--section-pad-v) var(--section-pad-h);
@@ -1459,7 +1555,7 @@ section {
 }
 
 
-/* ── 19. FOOTER ─────────────────────────────────────────── */
+/* ── 20. FOOTER ─────────────────────────────────────────── */
 .footer {
   background: #111b1a;
   padding: 2.5rem 2rem;
@@ -1500,7 +1596,7 @@ section {
 .footer-link--gold { color: var(--warm); }
 
 
-/* ── 20. UTILITIES ──────────────────────────────────────── */
+/* ── 21. UTILITIES ──────────────────────────────────────── */
 .text-center { text-align: center; }
 .text-right  { text-align: right; }
 
@@ -1529,7 +1625,7 @@ section {
 }
 
 
-/* ── 21. ANIMATIONS ─────────────────────────────────────── */
+/* ── 22. ANIMATIONS ─────────────────────────────────────── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1551,7 +1647,7 @@ section {
 .animate-delay-5 { animation-delay: 1.0s; }
 
 
-/* ── 22. RESPONSIVE ─────────────────────────────────────── */
+/* ── 23. RESPONSIVE ─────────────────────────────────────── */
 @media (max-width: 900px) {
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
