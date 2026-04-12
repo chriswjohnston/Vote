@@ -1,19 +1,17 @@
 module.exports = function (eleventyConfig) {
 
-  // Pass static assets through untouched
-  eleventyConfig.addPassthroughCopy("src/assets");
-
-
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/news.json": "news.json" });
 
   return {
     dir: {
-      input: "src/pages",
+      input:    "src/pages",
       includes: "../_includes",
-      data: "../_data",
-      output: "_site"
+      data:     "../_data",
+      output:   "_site"
     },
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine:     "njk",
     markdownTemplateEngine: "njk",
-    templateFormats: ["njk", "html", "md"]
+    templateFormats:        ["njk", "html", "md"]
   };
 };
