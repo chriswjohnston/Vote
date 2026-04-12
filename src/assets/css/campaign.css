@@ -568,7 +568,7 @@ section {
 
 /* Push page content below nav + ticker */
 .page-offset {
-  padding-top: calc(var(--nav-height) + 32px);
+  padding-top: calc(var(--nav-height) + 14px);
 }
 
 
