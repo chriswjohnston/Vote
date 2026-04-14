@@ -1,1 +1,24 @@
-test
+{
+  "caseTitle": "2022: Municipal Software Replacement Debacle",
+  "caseSummary": "The Township approved a major software replacement, failed to oversee it, and later replaced it with a cheaper alternative.",
+  "caseImpact": "This shows how large projects can fail without accountability and still move forward without scrutiny.",
+  "caseFacts": [
+    "RFP issued in 2022",
+    "TownSuite awarded reduced contract",
+    "Multiple delays from 2023–2025",
+    "Project abandoned",
+    "Munisoft selected later at lower cost"
+  ],
+  "caseTimeline": [
+    {
+      "date": "Feb 2022",
+      "content": "<strong>RFP issued</strong>",
+      "type": "highlight"
+    }
+  ],
+  "casePattern": "Projects are approved, delayed, and quietly reset.",
+  "caseDifferently": [
+    "Reissue RFP after scope changes",
+    "Require milestone reporting"
+  ]
+}
