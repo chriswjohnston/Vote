@@ -1,0 +1,12 @@
+{% if caseDetails %}
+<section class="case-section case-details">
+  <h2>In Detail</h2>
+
+  {% for block in caseDetails %}
+    <div class="case-detail-block">
+      {{ block | safe }}
+    </div>
+  {% endfor %}
+
+</section>
+{% endif %}
