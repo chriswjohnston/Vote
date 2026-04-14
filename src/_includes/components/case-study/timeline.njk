@@ -1,0 +1,21 @@
+{% if caseTimeline %}
+<section class="case-section case-timeline">
+  <h2>Timeline</h2>
+
+  <div class="timeline">
+    {% for item in caseTimeline %}
+      <div class="timeline-item timeline-item--{{ item.type or 'default' }}">
+        
+        <div class="timeline-date">
+          {{ item.date }}
+        </div>
+
+        <div class="timeline-content">
+          {{ item.content | safe }}
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
