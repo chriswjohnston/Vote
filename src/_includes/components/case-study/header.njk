@@ -1,1 +1,9 @@
-test
+{% if caseTitle %}
+<header class="case-header">
+  <h1>{{ caseTitle }}</h1>
+
+  {% if caseSubtitle %}
+    <p class="case-subtitle">{{ caseSubtitle }}</p>
+  {% endif %}
+</header>
+{% endif %}
