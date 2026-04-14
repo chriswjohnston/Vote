@@ -1,0 +1,12 @@
+{% if caseDifferently %}
+<section class="case-section case-differently">
+  <h2>What I’d Do Differently</h2>
+
+  <ul>
+    {% for item in caseDifferently %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+
+</section>
+{% endif %}
