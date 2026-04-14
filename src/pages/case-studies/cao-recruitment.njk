@@ -1,13 +1,23 @@
 ---
-layout: layouts/case-study.njk
+layout: layouts/base.njk
+title: "2021 CAO Recruitment Scandal"
 permalink: "/case-studies/cao-recruitment/"
 ---
 
-{% set caseTitle = caseStudies.caoRecruitment.caseTitle %}
-{% set caseSubtitle = caseStudies.caoRecruitment.caseSubtitle %}
-{% set caseSummary = caseStudies.caoRecruitment.caseSummary %}
-{% set caseTimeline = caseStudies.caoRecruitment.caseTimeline %}
-{% set caseDetails = caseStudies.caoRecruitment.caseDetails %}
-{% set casePattern = caseStudies.caoRecruitment.casePattern %}
-{% set caseDifferently = caseStudies.caoRecruitment.caseDifferently %}
-{% set caseEvidence = caseStudies.caoRecruitment.caseEvidence %}
+<h1>{{ caseStudies["cao-recruitment"].caseTitle }}</h1>
+
+<p><strong>Summary:</strong> {{ caseStudies["cao-recruitment"].caseSummary }}</p>
+
+<h2>Timeline</h2>
+<ul>
+{% for item in caseStudies["cao-recruitment"].caseTimeline %}
+  <li><strong>{{ item.date }}</strong> — {{ item.content }}</li>
+{% endfor %}
+</ul>
+
+<h2>What I Would Have Done Differently</h2>
+<ul>
+{% for item in caseStudies["cao-recruitment"].caseDifferently %}
+  <li>{{ item }}</li>
+{% endfor %}
+</ul>
