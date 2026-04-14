@@ -1,0 +1,13 @@
+---
+layout: layouts/case-study.njk
+permalink: "/case-studies/cao-recruitment/"
+---
+
+{% set caseTitle = caseStudies.caoRecruitment.caseTitle %}
+{% set caseSubtitle = caseStudies.caoRecruitment.caseSubtitle %}
+{% set caseSummary = caseStudies.caoRecruitment.caseSummary %}
+{% set caseTimeline = caseStudies.caoRecruitment.caseTimeline %}
+{% set caseDetails = caseStudies.caoRecruitment.caseDetails %}
+{% set casePattern = caseStudies.caoRecruitment.casePattern %}
+{% set caseDifferently = caseStudies.caoRecruitment.caseDifferently %}
+{% set caseEvidence = caseStudies.caoRecruitment.caseEvidence %}
