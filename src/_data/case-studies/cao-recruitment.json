@@ -1,9 +1,7 @@
 {
   "caseTitle": "2021: CAO Recruitment Scandal",
   "caseSubtitle": "Closed-door hiring process and self-appointment raised accountability concerns",
-
   "caseSummary": "After the CAO’s retirement in 2021, the Township ran a recruitment process that lacked transparency and ended with the acting CAO appointing herself to a newly defined role. Key steps happened behind closed doors, including a meeting later deemed illegal by the Ombudsman.",
-
   "caseTimeline": [
     {
       "date": "Feb 16, 2021",
@@ -17,7 +15,7 @@
     },
     {
       "date": "2021",
-      "content": "RFP responses directed to the acting CAO herself, who is involved in the process.",
+      "content": "RFP responses directed to the acting CAO herself.",
       "type": "problem"
     },
     {
@@ -27,7 +25,7 @@
     },
     {
       "date": "2021",
-      "content": "E4m engaged to assist with recruitment for CAO-Clerk-Treasurer role.",
+      "content": "E4m engaged to assist with recruitment.",
       "type": "neutral"
     },
     {
@@ -41,51 +39,30 @@
       "type": "neutral"
     }
   ],
-
   "caseDetails": [
-    "<p>Following the retirement of the Township’s CAO, a recruitment process was initiated that lacked independence and transparency. The acting CAO-Clerk-Treasurer both led the process and was the recipient of submissions, creating a clear conflict of interest.</p>",
-
-    "<p>The RFP (HR-CAO-RFP 2021) outlined a process to hire a third party to assist Council in recruiting a CAO-Clerk-Treasurer. However, the process expanded beyond its original scope without public explanation.</p>",
-
-    "<p>E4m was engaged and provided input on the Township’s administrative needs. This included recommendations that were not publicly requested or debated in open session.</p>",
-
-    "<p>Ultimately, the process resulted in the acting CAO-Clerk-Treasurer appointing herself to a newly defined role of Municipal Administrator through By-law 2021-45.</p>",
-
-    "<p>The change from CAO-Clerk-Treasurer to Municipal Administrator has never been clearly explained to residents, including what responsibilities may have changed or been removed.</p>",
-
-    "<p>Compounding concerns, at least one meeting related to this process was later ruled illegal by the Ombudsman, reinforcing concerns about transparency and governance.</p>"
+    "<p>Following the retirement of the Township’s CAO, a recruitment process was initiated that lacked independence and transparency.</p>",
+    "<p>The acting CAO-Clerk-Treasurer both led the process and was the recipient of submissions, creating a clear conflict of interest.</p>",
+    "<p>Ultimately, the process resulted in the acting CAO-Clerk-Treasurer appointing herself to the newly defined role of Municipal Administrator through By-law 2021-45.</p>",
+    "<p>The change from CAO-Clerk-Treasurer to Municipal Administrator has never been clearly explained to residents.</p>"
   ],
-
-  "casePattern": "A major staffing decision was made through a process that combined internal control, limited transparency, and closed-door decision-making, resulting in an outcome that appeared predetermined.",
-
+  "casePattern": "A major staffing decision was made through a process that combined internal control, limited transparency, and closed-door decision-making.",
   "caseDifferently": [
     "Ensure recruitment processes are fully independent from internal candidates",
-    "Require all major staffing decisions to be discussed in open session wherever legally possible",
+    "Require all major staffing decisions to be discussed in open session",
     "Clearly define and publicly explain any role changes before appointments are made",
-    "Separate RFP administration from individuals who may benefit from the outcome",
-    "Require formal Council approval checkpoints before final hiring decisions",
-    "Publish a post-process report explaining decisions and costs"
+    "Separate RFP administration from individuals who may benefit from the outcome"
   ],
-
   "caseEvidence": [
     {
       "label": "HR-CAO-RFP 2021 document",
+      "url": "https://nipissingtownship.com/wp-content/uploads/2022/03/March-15-Council-Agenda-Package.pdf"
+    },
+    {
+      "label": "By-law 2021-45",
       "url": "#"
     },
     {
-      "label": "E4m proposal submission",
-      "url": "#"
-    },
-    {
-      "label": "By-law 2021-45 appointing Municipal Administrator",
-      "url": "#"
-    },
-    {
-      "label": "Ombudsman findings on closed meeting",
-      "url": "#"
-    },
-    {
-      "label": "2022 Organizational Chart update",
+      "label": "Ombudsman findings",
       "url": "#"
     }
   ]
