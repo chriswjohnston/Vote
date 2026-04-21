@@ -58,57 +58,94 @@
     <span class="section__eyebrow">Get in touch</span>
     <h2 class="section__title">Send a message</h2>
     <p class="section__lead" style="max-width:58ch;">
-      The best messages are specific. Tell me what issue you're seeing, where it is happening,
+      The best messages are specific. Tell me what issue you are seeing, where it is happening,
       and what you think should be done differently.
     </p>
 
-    <div class="value-grid" style="grid-template-columns: minmax(0,1.25fr) minmax(320px,0.75fr); align-items:start;">
+    <div class="value-grid" style="grid-template-columns: minmax(0,1.4fr) minmax(280px,0.6fr); align-items:start; margin-top:1.5rem;">
+
       <article class="value-card" style="padding:2rem;">
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form" style="display:grid;gap:1rem;">
+        <form
+          action="https://formspree.io/f/mnjlbeop"
+          method="POST"
+          id="contact-form"
+          style="display:grid;gap:1.1rem;"
+        >
+          <!-- Formspree redirect on success — replace with your domain once set up -->
+          <input type="hidden" name="_next" value="https://vote.chriswjohnston.ca/contact.html?sent=true" />
+          <input type="hidden" name="_subject" value="New message from vote.chriswjohnston.ca" />
+
           <div>
-            <label for="name" style="display:block;font-weight:700;margin-bottom:0.45rem;color:var(--primary);">Your name</label>
+            <label for="name" style="display:block;font-weight:700;font-size:0.9rem;margin-bottom:0.45rem;color:var(--primary);">Your name</label>
             <input type="text" id="name" name="name" required placeholder="Jane Doe"
-              style="width:100%;padding:0.9rem 1rem;border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;font:inherit;" />
+              style="width:100%;padding:0.9rem 1rem;border:1.5px solid rgba(0,0,0,0.12);border-radius:12px;background:#fff;font:inherit;font-size:0.95rem;" />
           </div>
+
           <div>
-            <label for="email" style="display:block;font-weight:700;margin-bottom:0.45rem;color:var(--primary);">Email address</label>
+            <label for="email" style="display:block;font-weight:700;font-size:0.9rem;margin-bottom:0.45rem;color:var(--primary);">Email address</label>
             <input type="email" id="email" name="email" required placeholder="jane@example.com"
-              style="width:100%;padding:0.9rem 1rem;border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;font:inherit;" />
+              style="width:100%;padding:0.9rem 1rem;border:1.5px solid rgba(0,0,0,0.12);border-radius:12px;background:#fff;font:inherit;font-size:0.95rem;" />
           </div>
+
           <div>
-            <label for="subject" style="display:block;font-weight:700;margin-bottom:0.45rem;color:var(--primary);">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="What's on your mind?"
-              style="width:100%;padding:0.9rem 1rem;border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;font:inherit;" />
+            <label for="subject" style="display:block;font-weight:700;font-size:0.9rem;margin-bottom:0.45rem;color:var(--primary);">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What is on your mind?"
+              style="width:100%;padding:0.9rem 1rem;border:1.5px solid rgba(0,0,0,0.12);border-radius:12px;background:#fff;font:inherit;font-size:0.95rem;" />
           </div>
+
           <div>
-            <label for="message" style="display:block;font-weight:700;margin-bottom:0.45rem;color:var(--primary);">Message</label>
-            <textarea id="message" name="message" required placeholder="Share your question, concern, or idea..."
-              style="width:100%;min-height:180px;padding:1rem;border:1px solid rgba(0,0,0,0.12);border-radius:14px;background:#fff;font:inherit;resize:vertical;"></textarea>
+            <label for="message" style="display:block;font-weight:700;font-size:0.9rem;margin-bottom:0.45rem;color:var(--primary);">Message</label>
+            <textarea id="message" name="message" required placeholder="Share your question, concern, or idea — the more specific the better."
+              style="width:100%;min-height:180px;padding:1rem;border:1.5px solid rgba(0,0,0,0.12);border-radius:12px;background:#fff;font:inherit;font-size:0.95rem;resize:vertical;line-height:1.5;"></textarea>
           </div>
+
           <button type="submit" class="btn btn-dark" style="justify-self:start;">Send Message</button>
         </form>
+
+        <!-- Success message shown after ?sent=true redirect -->
+        <div id="form-success" style="display:none; padding:1.5rem; background:var(--warm); border-radius:12px; border-left:4px solid var(--secondary);">
+          <strong style="color:var(--primary);">Message received.</strong>
+          <p style="margin-top:0.35rem; color:var(--primary); font-size:0.95rem;">Thanks for reaching out. I read every message and will be in touch.</p>
+        </div>
       </article>
 
       <div style="display:grid;gap:1rem;">
         <article class="value-card">
-          <span>Best for</span>
-          <h3>Questions and concerns</h3>
-          <p>If there's a Township issue bothering you, send it. The more specific the example, the better.</p>
+          <span>Questions &amp; concerns</span>
+          <h3>Something not right?</h3>
+          <p>If there is a Township issue bothering you, send it. The more specific the example, the better.</p>
         </article>
         <article class="value-card">
-          <span>Best for</span>
-          <h3>Ideas and priorities</h3>
-          <p>If there's something you want to see improved, changed, or added to the conversation, I want to hear it.</p>
+          <span>Ideas &amp; priorities</span>
+          <h3>Want to shape the conversation?</h3>
+          <p>If there is something you want to see improved or added to the platform, I want to hear it.</p>
         </article>
         <article class="value-card">
           <span>Direct contact</span>
-          <h3>Email works too</h3>
+          <h3>Email directly</h3>
           <p><a href="mailto:chris@chriswjohnston.ca" class="card__link">chris@chriswjohnston.ca</a></p>
+        </article>
+        <article class="value-card">
+          <span>Facebook</span>
+          <h3>Follow the campaign</h3>
+          <p><a href="https://www.facebook.com/chris.johnston.nipissing" target="_blank" rel="noopener" class="card__link">facebook.com/chris.johnston.nipissing</a></p>
         </article>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  // Show success message if redirected back after Formspree submission
+  if (window.location.search.includes('sent=true')) {
+    var form = document.getElementById('contact-form');
+    var success = document.getElementById('form-success');
+    if (form) form.style.display = 'none';
+    if (success) success.style.display = 'block';
+    // Clean the URL
+    window.history.replaceState({}, '', window.location.pathname);
+  }
+</script>
 
 <section class="section section--navy">
   <div class="container">
