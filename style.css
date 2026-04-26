@@ -1218,12 +1218,12 @@ a { color: inherit; text-decoration: none; }
   .page-hero__grid,
   .about-overlap__inner,
   .about-photo-panel,
-  .value-grid,
   .platform-intro-grid,
   .commitment__grid,
   .commitment-feature {
     grid-template-columns: 1fr;
   }
+  .value-grid { grid-template-columns: repeat(2, 1fr); }
 
   .issue-panel--featured { transform: none; }
   .story-visual { min-height: auto; }
@@ -1250,10 +1250,17 @@ a { color: inherit; text-decoration: none; }
     box-shadow: 0 12px 24px rgba(7,29,59,0.08);
   }
   .nav__toggle { display: flex; }
-  .hero__inner { padding-top: 6rem; }
-  .hero__title { font-size: clamp(2.6rem, 12vw, 4rem); }
-  .hero-summary__item { grid-template-columns: 42px 1fr; }
-  .hero-summary__item span { width: 42px; height: 42px; }
+  .hero__inner { padding-top: 5rem; padding-bottom: 3rem; }
+  .hero__title { font-size: clamp(2.4rem, 11vw, 3.8rem); }
+  .hero__grid { gap: 1.5rem; }
+  .hero-summary { padding: 1rem; }
+  .hero-summary__top { padding: 0.25rem 0.2rem 0.75rem; }
+  .hero-summary__top h2 { font-size: 1.1rem; }
+  .hero-summary__items { gap: 0.6rem; }
+  .hero-summary__item { grid-template-columns: 38px 1fr; gap: 0.65rem; padding: 0.75rem; }
+  .hero-summary__item span { width: 38px; height: 38px; font-size: 0.8rem; }
+  .hero-summary__item strong { font-size: 0.88rem; }
+  .hero-summary__item p { font-size: 0.78rem; }
   .story-visual__main,
   .about-photo-panel__image,
   .commitment-feature__media { min-height: 420px; }
@@ -1291,6 +1298,11 @@ a { color: inherit; text-decoration: none; }
   .platform-summary-card,
   .commitment,
   .callout-banner { border-radius: 1rem; }
+  .hero { min-height: auto; }
+  .hero__title { font-size: clamp(2.1rem, 10vw, 3rem); }
+  .hero__body { font-size: 0.95rem; }
+  .hero-summary { display: none; }
+  .value-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Nav dropdowns ─────────────────────────────────────── */
