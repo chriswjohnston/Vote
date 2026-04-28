@@ -4,44 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Action Plan — Chris Johnston for Nipissing Township Council</title>
-  <meta name="description" content="18 specific motions, ready for day one. The detailed action plan behind Chris Johnston's platform for Nipissing Township Council." />
+  <meta name="description" content="22 specific motions, ready for day one. The detailed action plan behind Chris Johnston's platform for Nipissing Township Council." />
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Accordion */
-    .accordion { margin-top: 0.75rem; }
-    .accordion__trigger {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
-      color: var(--secondary);
-      font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-family: inherit;
-    }
-    .accordion__trigger svg { transition: transform 0.2s; flex-shrink: 0; }
-    .accordion__trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
-    .accordion__body {
-      display: none;
-      margin-top: 0.75rem;
-      padding: 1rem 1.25rem;
-      background: var(--warm);
-      border-radius: 0.5rem;
-      font-size: 0.9rem;
-      line-height: 1.6;
-      color: var(--primary);
-    }
-    .accordion__body p { margin: 0 0 0.5rem; }
-    .accordion__body p:last-child { margin-bottom: 0; }
-    .accordion__body strong { display: block; margin-bottom: 0.35rem; color: var(--primary); }
-    .accordion__trigger[aria-expanded="true"] + .accordion__body { display: block; }
-
-    /* Motion group */
     .motion-group { margin-bottom: 3rem; }
     .motion-group__header {
       display: flex;
@@ -65,8 +30,13 @@
       color: var(--primary);
       margin: 0;
     }
-
-    /* Motion item */
+    .motion-group__summary {
+      font-size: 0.95rem;
+      color: #4a5568;
+      line-height: 1.6;
+      max-width: 68ch;
+      margin: -0.5rem 0 1rem 0;
+    }
     .motion-item {
       padding: 1.1rem 0;
       border-bottom: 1px solid #e8e0d6;
@@ -98,8 +68,6 @@
       margin: 0;
       line-height: 1.5;
     }
-
-    /* Prior work cards */
     .prior-work-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -143,6 +111,7 @@
     .prior-work-card__link:hover { text-decoration: underline; }
   </style>
 </head>
+
 <body class="page-body">
 
 <header class="page-hero page-hero--platform">
@@ -150,16 +119,17 @@
   <div class="page-hero__grid">
     <div>
       <span class="page-kicker">The Action Plan</span>
-      <h1>18 motions. Ready for day one.</h1>
+      <h1>22 motions. Delivering 7 commitments.</h1>
       <p class="page-hero__lead">
-        This is not a list of intentions. These are specific motions — drafted, structured, and ready to bring to Council the moment I have a seat at the table. Every item has a clear purpose, a clear outcome, and a connection to what I have already been pushing for from outside that room.
+        This is not a list of intentions. These are specific motions — drafted, structured, and ready to bring to Council the moment I have a seat at the table. Every item connects directly to one of the seven commitments in my platform.
       </p>
     </div>
+
     <aside class="page-hero__aside">
       <h2>What this page is</h2>
       <div class="page-hero__chips">
-        <span class="page-hero__chip">18 motions drafted</span>
-        <span class="page-hero__chip">7 areas of focus</span>
+        <span class="page-hero__chip">22 motions drafted</span>
+        <span class="page-hero__chip">7 commitments</span>
         <span class="page-hero__chip">Ready day one</span>
       </div>
       <p>
@@ -173,15 +143,15 @@
   <div class="about-overlap__inner">
     <div class="about-stat">
       <strong>Not waiting for a seat</strong>
-      <span>I have been pushing for change since 2021 — through letters, complaints, tools, and formal submissions to Council</span>
+      <span>I have been pushing for change since 2021 — through letters, complaints, tools, and formal submissions to Council.</span>
     </div>
     <div class="about-stat">
       <strong>Specific and documented</strong>
-      <span>Every motion is drafted in full — not a talking point, but an actual motion ready to be moved</span>
+      <span>Every motion is drafted in full — not a talking point, but an actual motion ready to be moved.</span>
     </div>
     <div class="about-stat">
-      <strong>All available to read</strong>
-      <span>Download the full motions document or expand any item below to read the exact wording</span>
+      <strong>Built around the platform</strong>
+      <span>Each motion connects directly to one of the seven commitments I am making to residents.</span>
     </div>
   </div>
 </section>
@@ -191,38 +161,45 @@
     <span class="section__eyebrow">Before I had a seat</span>
     <h2 class="section__title" style="max-width:16ch;">I didn't wait to start pushing for change.</h2>
     <p class="section__lead" style="max-width:62ch;">
-      Every item on this action plan connects to something I have already done — not as a councillor, but as a resident who refused to accept that the only way to change things is to sit on the inside. Here is the documented record.
+      Every item on this action plan connects to something I have already done — not as a councillor, but as a resident who refused to accept that the only way to change things is to sit on the inside.
     </p>
-    <div class="prior-work-grid">
 
+    <div class="prior-work-grid">
       <div class="prior-work-card">
         <p class="prior-work-card__date">December 2021</p>
         <h3 class="prior-work-card__title">Pushed for the agenda package to be published</h3>
-        <p class="prior-work-card__body">I raised the issue of the agenda package not being consistently published before Council meetings. Kris Croskery-Hodgins responded in writing: <em>"Thank you for bringing the oversight to our attention. It is our intention to publish the package the Monday before each meeting."</em> A basic transparency standard — established by one request from a resident with no seat.</p>
+        <p class="prior-work-card__body">
+          I raised the issue of the agenda package not being consistently published before Council meetings. A basic transparency standard — established by one request from a resident with no seat.
+        </p>
         <a href="docs/action/Agenda Package Email December 2021.pdf" target="_blank" rel="noopener" class="prior-work-card__link">Read the email exchange →</a>
       </div>
 
       <div class="prior-work-card">
         <p class="prior-work-card__date">November 2022</p>
-        <h3 class="prior-work-card__title">Flagged the by-law violation before Council voted to change it</h3>
-        <p class="prior-work-card__body">Before the new Council's first meeting, I wrote formally to flag that staff were re-appointing committee members without the annual Council process the by-law required. I asked for my concern to be included in the agenda package before the vote. It wasn't — and Council changed the by-law to match what staff had been doing. The concern is in the case study. The email is on the record.</p>
+        <h3 class="prior-work-card__title">Flagged the by-law issue before Council voted to change it</h3>
+        <p class="prior-work-card__body">
+          Before the new Council's first meeting, I wrote formally to flag that staff were re-appointing committee members without the annual Council process the by-law required.
+        </p>
         <a href="case-boards-committees.html" class="prior-work-card__link">Read the Boards &amp; Committees case study →</a>
       </div>
 
       <div class="prior-work-card">
         <p class="prior-work-card__date">September 2023</p>
         <h3 class="prior-work-card__title">Submitted a 9-page response to the draft Strategic Plan</h3>
-        <p class="prior-work-card__body">Before holding any office, I submitted a detailed critique of the 2023–2026 draft Strategic Plan — flagging its short horizon, its flawed process, and predicting exactly the 2026 election-year planning gap the Township now faces. Council approved the plan anyway. It is Spring 2026. There is no successor plan in sight.</p>
+        <p class="prior-work-card__body">
+          I submitted a detailed critique of the 2023–2026 draft Strategic Plan — flagging its short horizon, its flawed process, and predicting the 2026 planning gap the Township now faces.
+        </p>
         <a href="case-2023-strategic.html" class="prior-work-card__link">Read the Strategic Plan case study →</a>
       </div>
 
       <div class="prior-work-card">
         <p class="prior-work-card__date">Built before the election</p>
         <h3 class="prior-work-card__title">nipissing.news — a pilot of what transparency looks like</h3>
-        <p class="prior-work-card__body">I built nipissing.news — a searchable, automatically updated archive of every Township by-law, resolution, and council meeting — before ever holding a seat. No Township budget. No staff support. Just publicly available documents, scraped, organized, and made searchable. This is not a concept. It exists. It is what I mean when I say transparency is achievable at low cost. When elected, the goal is to make this unnecessary — because the Township itself will publish records in a format residents can actually use.</p>
+        <p class="prior-work-card__body">
+          I built nipissing.news — a searchable, automatically updated archive of Township by-laws, resolutions, and council meetings — before ever holding a seat.
+        </p>
         <a href="https://nipissing.news" target="_blank" rel="noopener" class="prior-work-card__link">Visit nipissing.news →</a>
       </div>
-
     </div>
   </div>
 </section>
@@ -230,27 +207,32 @@
 <section class="section">
   <div class="container">
     <span class="section__eyebrow">The full action plan</span>
-    <h2 class="section__title">18 motions across 7 areas.</h2>
+    <h2 class="section__title">22 motions delivering 7 commitments.</h2>
     <p class="section__lead" style="max-width:62ch; margin-bottom:0.5rem;">
-      Each item below shows the title, the plain-language intent, and the exact motion wording. Expand any item to read the full text. Download the complete document if you want everything in one place.
+      Each item below shows the title and plain-language intent of the motion. The complete motion documents will be published as individual PDFs and as one combined action plan.
     </p>
     <p style="margin-bottom:2rem;">
       <a href="docs/action/Chris Johnston - Action Plan Motions.pdf" target="_blank" rel="noopener" class="card__link">Download the complete motions document →</a>
     </p>
 
-    <!-- GROUP 1 -->
+    <!-- COMMITMENT 01 -->
     <div class="motion-group">
       <div class="motion-group__header">
-        <span class="motion-group__num">Area 01</span>
-        <h3 class="motion-group__title">How Council Works</h3>
+        <span class="motion-group__num">Commitment 01</span>
+        <h3 class="motion-group__title">A Complete, Searchable Public Record</h3>
       </div>
+      <p class="motion-group__summary">
+        Residents should be able to find, search, and understand Township records without barriers.
+      </p>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">01</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Mandatory recorded votes and debate requirement</h4>
-            <p class="motion-item__desc">Every councillor's vote on every decision should be on the public record. And before any vote is called, the Chair must ask if anyone wants to speak. These two changes together mean no more motions passing in silence, and no more unattributed decisions.</p>
+            <h4 class="motion-item__title">Publish every active by-law online</h4>
+            <p class="motion-item__desc">
+              No more “available at the office.” The Township should publish every active by-law online in a format residents can actually find and use.
+            </p>
             <a href="/docs/motions/motion%201.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 01 (PDF) →</a>
           </div>
         </div>
@@ -260,38 +242,47 @@
         <div class="motion-item__header">
           <span class="motion-item__num">02</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Establish a Committee of the Whole by by-law</h4>
-            <p class="motion-item__desc">A Committee of the Whole gives all members of Council a structured space to have real conversations about complex files — budgets, strategic priorities, major capital decisions — before a formal vote is required. Rather than cramming everything into regular meeting agendas, this creates a dedicated forum for deeper work. The by-law establishes the committee's existence and purpose. How it runs is up to Council.</p>
+            <h4 class="motion-item__title">Standardize Council, board, and committee video naming and archiving</h4>
+            <p class="motion-item__desc">
+              Council, Recreation Committee, Museum Board, Cemetery Board, and other public meeting videos should be named and archived consistently so residents can find recordings by date, body, and meeting type.
+            </p>
             <a href="/docs/motions/motion%202.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 02 (PDF) →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="motion-item">
-        <div class="motion-item__header">
-          <span class="motion-item__num">03</span>
-          <div class="motion-item__body">
-            <h4 class="motion-item__title">Schedule a Saturday Committee of the Whole meeting</h4>
-            <p class="motion-item__desc">Regular Council meetings are not designed for deep work. Agenda items move quickly, time is limited, and complex files rarely get the discussion they deserve. A Saturday session creates a full working day for Council to actually dig into strategic priorities — not a quick vote, but a real conversation. The accessibility benefit for residents is secondary. The primary purpose is giving Council the time and space to govern properly.</p>
-            <a href="/docs/motions/motion%203.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 03 (PDF) →</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- GROUP 2 -->
+    <!-- COMMITMENT 02 -->
     <div class="motion-group">
       <div class="motion-group__header">
-        <span class="motion-group__num">Area 02</span>
-        <h3 class="motion-group__title">Boards &amp; Committees</h3>
+        <span class="motion-group__num">Commitment 02</span>
+        <h3 class="motion-group__title">Clear, Consistent Communication with Residents</h3>
+      </div>
+      <p class="motion-group__summary">
+        Residents should not have to chase information. The Township should deliver it clearly and consistently.
+      </p>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">03</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Implement a subscribable municipal calendar</h4>
+            <p class="motion-item__desc">
+              Residents should be able to subscribe once and receive Council, board, committee, public meeting, and municipal event dates in one place.
+            </p>
+            <a href="/docs/motions/motion%203.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 03 (PDF) →</a>
+          </div>
+        </div>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">04</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Amend each board and committee by-law to require annual Council direction</h4>
-            <p class="motion-item__desc">Without direction built into the governing by-law, committees operate on inertia — doing what they always did, without Council ever having said whether that is what is needed. By amending the by-law for each body, the annual mandate becomes a structural requirement, not a courtesy. Council must act. Committees must align. The accountability loop is built in.</p>
+            <h4 class="motion-item__title">Electronic property tax billing</h4>
+            <p class="motion-item__desc">
+              Digital property tax bills were promised as part of modernization. This motion directs staff to report on what it would take to finally deliver electronic billing for residents.
+            </p>
             <a href="/docs/motions/motion%204.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 04 (PDF) →</a>
           </div>
         </div>
@@ -301,38 +292,47 @@
         <div class="motion-item__header">
           <span class="motion-item__num">05</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Mandatory annual reporting from boards and committees</h4>
-            <p class="motion-item__desc">Boards and committees should have to account for their year — in writing, before the first October Council meeting. Then the Chair (or a delegate) should attend the second October meeting to present that report and answer questions. Council should hear from the bodies it oversees at least once a year, on the record, in public.</p>
+            <h4 class="motion-item__title">Municipal email newsletter system</h4>
+            <p class="motion-item__desc">
+              Residents should be able to opt in to receive municipal updates directly instead of relying on Facebook, word of mouth, or repeated website checks.
+            </p>
             <a href="/docs/motions/motion%205.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 05 (PDF) →</a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- GROUP 3 -->
-    <div class="motion-group">
-      <div class="motion-group__header">
-        <span class="motion-group__num">Area 03</span>
-        <h3 class="motion-group__title">The Public Record</h3>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">06</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Publish every active by-law online</h4>
-            <p class="motion-item__desc">The Township's by-laws page currently states: <em>"A complete list of By-laws is available at the Municipal Office."</em> In 2025. Some by-laws are not available online at all. Others exist in broken or inaccessible formats. Outdated versions sit alongside current ones with no clear indication of which is in effect. I built nipissing.news to solve this before I had a seat. This resolution directs staff to do what should already exist.</p>
+            <h4 class="motion-item__title">New municipal website</h4>
+            <p class="motion-item__desc">
+              The Township website should be built around how residents actually look for information, with Council approving the wireframe before development begins.
+            </p>
             <a href="/docs/motions/motion%206.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 06 (PDF) →</a>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- COMMITMENT 03 -->
+    <div class="motion-group">
+      <div class="motion-group__header">
+        <span class="motion-group__num">Commitment 03</span>
+        <h3 class="motion-group__title">Transparency in Decisions and Accountability</h3>
+      </div>
+      <p class="motion-group__summary">
+        Council should be accountable, structured, and capable of real discussion — not just quick approvals.
+      </p>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">07</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Standardize Council meeting video naming and archiving</h4>
-            <p class="motion-item__desc">The Township livestreams Council meetings to YouTube. The recordings are inconsistently named, making them difficult to find after the fact. A standardized naming convention — date, meeting type — costs nothing and makes the public record searchable. It is a small change with an outsized impact on transparency.</p>
+            <h4 class="motion-item__title">Mandatory recorded votes and debate requirement</h4>
+            <p class="motion-item__desc">
+              Every councillor's vote on every decision should be on the public record, and the Chair should ask for discussion before calling the vote.
+            </p>
             <a href="/docs/motions/motion%207.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 07 (PDF) →</a>
           </div>
         </div>
@@ -342,27 +342,23 @@
         <div class="motion-item__header">
           <span class="motion-item__num">08</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Implement a subscribable municipal calendar</h4>
-            <p class="motion-item__desc">Right now, a resident who wants to know when the next Council meeting is, when the Recreation Committee meets, or when a public consultation is scheduled has to check multiple pages across the Township website — if they know those pages exist. A single subscribable calendar fixes this. Residents sign up once and get everything.</p>
+            <h4 class="motion-item__title">Establish a Committee of the Whole</h4>
+            <p class="motion-item__desc">
+              A Committee of the Whole creates a formal space for deeper discussion before complex files come to Council for final decisions.
+            </p>
             <a href="/docs/motions/motion%208.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 08 (PDF) →</a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- GROUP 4 -->
-    <div class="motion-group">
-      <div class="motion-group__header">
-        <span class="motion-group__num">Area 04</span>
-        <h3 class="motion-group__title">Communication &amp; Access</h3>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">09</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Electronic property tax billing</h4>
-            <p class="motion-item__desc">Digital property tax bills were cited as a key modernization benefit of the original TownSuite software purchase. That feature was never delivered — and when the Township switched to MuniSoft, the module was not purchased. Council was unaware. This motion directs staff to report on what it would actually take to deliver what was promised years ago.</p>
+            <h4 class="motion-item__title">Schedule a Council Term Priorities Committee of the Whole</h4>
+            <p class="motion-item__desc">
+              At the beginning of the term, Council should set its priorities in public before the term gets away from it. This session is about direction for the full Council term — what this Council intends to focus on, what staff should prepare, and what residents can expect Council to measure itself against.
+            </p>
             <a href="/docs/motions/motion%209.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 09 (PDF) →</a>
           </div>
         </div>
@@ -372,8 +368,10 @@
         <div class="motion-item__header">
           <span class="motion-item__num">10</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Municipal email newsletter system</h4>
-            <p class="motion-item__desc">Residents should be able to opt in to receive updates directly from the Township — not have to check the website, follow a Facebook page, or happen to hear something at the landfill. An email newsletter is one of the most basic and cost-effective communication tools available. This motion gets the report on the table.</p>
+            <h4 class="motion-item__title">Require annual Council direction for boards and committees</h4>
+            <p class="motion-item__desc">
+              Boards and committees should not operate on inertia. Council should set direction annually so their work aligns with the Township's priorities.
+            </p>
             <a href="/docs/motions/motion%2010.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 10 (PDF) →</a>
           </div>
         </div>
@@ -383,60 +381,60 @@
         <div class="motion-item__header">
           <span class="motion-item__num">11</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">New municipal website</h4>
-            <p class="motion-item__desc">The current Township website is difficult to navigate, inconsistently maintained, and not designed around how residents actually look for information. A new website should be built around residents first — with Council approving the wireframe before development begins, so the direction is set by elected officials, not just by whoever builds it.</p>
+            <h4 class="motion-item__title">Mandatory annual reporting from boards and committees</h4>
+            <p class="motion-item__desc">
+              Boards and committees should report back to Council each year, in writing and in public, before the next budget cycle begins.
+            </p>
             <a href="/docs/motions/motion%2011.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 11 (PDF) →</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="motion-item">
-        <div class="motion-item__header">
-          <span class="motion-item__num">12</span>
-          <div class="motion-item__body">
-            <h4 class="motion-item__title">Online forms for public participation and correspondence</h4>
-            <p class="motion-item__desc">If a resident wants to depute before Council or submit correspondence for an agenda, the process is not obvious. There is no form, no plain-language guide, no clear path. Two simple online forms — one to request to present, one to submit correspondence — remove that barrier entirely. This should have existed years ago.</p>
-            <a href="/docs/motions/motion%2012.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 12 (PDF) →</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- GROUP 5 -->
+    <!-- COMMITMENT 04 -->
     <div class="motion-group">
       <div class="motion-group__header">
-        <span class="motion-group__num">Area 05</span>
-        <h3 class="motion-group__title">Procurement</h3>
+        <span class="motion-group__num">Commitment 04</span>
+        <h3 class="motion-group__title">Financial Transparency and Clarity</h3>
+      </div>
+      <p class="motion-group__summary">
+        Residents should understand how their money is being spent, what priorities shaped the budget, and how financial documents connect.
+      </p>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">12</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Annual budget priorities at the first December Council meeting</h4>
+            <p class="motion-item__desc">
+              Council should set budget priorities before staff builds the draft budget, creating a public record of what Council wants the budget to accomplish.
+            </p>
+            <a href="/docs/motions/motion%2012.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 12 (PDF) →</a>
+          </div>
+        </div>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">13</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Review the municipal procurement process</h4>
-            <p class="motion-item__desc">The Township has run two significant procurement processes in recent years that produced results different from what the process promised — the software replacement and the CAO recruitment. Both are documented. The procurement process needs to be examined, not assumed to be working. This motion puts that review on the agenda.</p>
+            <h4 class="motion-item__title">Annual November budget priority Committee of the Whole</h4>
+            <p class="motion-item__desc">
+              Each November, Council should review board and committee reporting, check progress against current priorities, identify annual goals, and prepare clear direction before the December budget priority meeting.
+            </p>
             <a href="/docs/motions/motion%2013.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 13 (PDF) →</a>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- GROUP 6 -->
-    <div class="motion-group">
-      <div class="motion-group__header">
-        <span class="motion-group__num">Area 06</span>
-        <h3 class="motion-group__title">Facilities &amp; Assets</h3>
-      </div>
-      <div class="callout-banner" style="margin-bottom:1.5rem;">
-        <h3 style="font-size:1rem; line-height:1.6; font-weight:500;">The 2025 Asset Management Plan puts a $4,000,000 replacement of the Township Office and Public Works Garage on the horizon by 2035 — less than ten years away. The existing facility "does not meet Township requirements for suitability and safe operations." That is not a small decision. It is a community-defining one. These motions are about getting the information Council needs to make that decision — and others like it — before the deadline makes the choice for us. Good planning is not expensive. Last-minute planning is.</h3>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">14</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Community Centre and Museum review — with a $4M decision looming</h4>
-            <p class="motion-item__desc">Before the Township can make good decisions about its facilities, it needs to know what it has. Usage levels, operating costs, capital needs, and market value if sold. These are basic facts that should be in front of Council before any major decision is made about either building — and with a $4M replacement on the horizon by 2035, major decisions are coming. This motion gets that information on the table.</p>
+            <h4 class="motion-item__title">Plain language budget summary letter</h4>
+            <p class="motion-item__desc">
+              The annual budget should be explained in plain language: what changed, what Council prioritized, what reserves were created or closed, and why major decisions were made.
+            </p>
             <a href="/docs/motions/motion%2014.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 14 (PDF) →</a>
           </div>
         </div>
@@ -446,50 +444,141 @@
         <div class="motion-item__header">
           <span class="motion-item__num">15</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Recreation asset usage study</h4>
-            <p class="motion-item__desc">The hockey rink and playgrounds are among the most visible public assets the Township maintains. Before spending money improving them — or deciding not to — Council should understand how they are actually used and what improvements would cost. Good decisions start with good information.</p>
+            <h4 class="motion-item__title">Standardize reserve naming convention</h4>
+            <p class="motion-item__desc">
+              Reserve names should be consistent across the budget, capital forecast, and audited financial statements so residents and councillors can cross-reference documents reliably.
+            </p>
             <a href="/docs/motions/motion%2015.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 15 (PDF) →</a>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- COMMITMENT 05 -->
+    <div class="motion-group">
+      <div class="motion-group__header">
+        <span class="motion-group__num">Commitment 05</span>
+        <h3 class="motion-group__title">Open and Accessible Participation</h3>
+      </div>
+      <p class="motion-group__summary">
+        Any resident should be able to engage with Council, submit correspondence, or request to speak without needing insider knowledge.
+      </p>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">16</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Community Hub feasibility at Heritage Park</h4>
-            <p class="motion-item__desc">If the Township is going to spend $4M on a new office and public works facility by 2035 — and it will need to, according to its own Asset Management Plan — then that decision should not happen in isolation. The Community Centre is aging. The Museum needs attention. The rink is underserved. Fire, offices, storage — everything is scattered. The question worth asking before committing to any single replacement is whether a consolidated Community Hub at Heritage Park makes more long-term sense than rebuilding separate aging buildings one by one. This is also exactly the kind of big-picture question a real Strategic Plan should be answering. This motion starts that conversation with a real proposal, not a half-baked idea from a committee meeting.</p>
+            <h4 class="motion-item__title">Online forms for public participation and correspondence</h4>
+            <p class="motion-item__desc">
+              Residents should have a clear, simple online path to submit correspondence or request to present to Council.
+            </p>
             <a href="/docs/motions/motion%2016.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 16 (PDF) →</a>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- COMMITMENT 06 -->
+    <div class="motion-group">
+      <div class="motion-group__header">
+        <span class="motion-group__num">Commitment 06</span>
+        <h3 class="motion-group__title">Transparent and Fair Procurement</h3>
+      </div>
+      <p class="motion-group__summary">
+        When processes fail or produce unexpected outcomes, Council should review them instead of assuming they worked.
+      </p>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">17</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Recreation Coordinator feasibility study</h4>
-            <p class="motion-item__desc">Recreation programming in Nipissing has long relied on volunteers and a committee without professional coordination. The question is whether a part-time or full-time Recreation Coordinator could generate enough in programming revenue, grant funding, and facility usage to offset the cost of the role. This motion gets that analysis done before any hiring decision is made.</p>
+            <h4 class="motion-item__title">Review the municipal procurement process</h4>
+            <p class="motion-item__desc">
+              Recent procurement processes have raised questions about whether the process is delivering what Council and residents expect. This motion puts that review on the agenda.
+            </p>
             <a href="/docs/motions/motion%2017.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 17 (PDF) →</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- GROUP 7 -->
+    <!-- COMMITMENT 07 -->
     <div class="motion-group">
       <div class="motion-group__header">
-        <span class="motion-group__num">Area 07</span>
-        <h3 class="motion-group__title">Strategic Direction</h3>
+        <span class="motion-group__num">Commitment 07</span>
+        <h3 class="motion-group__title">Long-Term Planning and Responsible Asset Decisions</h3>
+      </div>
+      <p class="motion-group__summary">
+        Major decisions should be driven by planning — not deadlines, assumptions, or guesswork.
+      </p>
+
+      <div class="callout-banner" style="margin-bottom:1.5rem;">
+        <h3 style="font-size:1rem; line-height:1.6; font-weight:500;">
+          The Township has major facility and asset decisions ahead. Good planning is not expensive. Last-minute planning is.
+        </h3>
       </div>
 
       <div class="motion-item">
         <div class="motion-item__header">
           <span class="motion-item__num">18</span>
           <div class="motion-item__body">
-            <h4 class="motion-item__title">Engage a firm to develop a long-term Strategic Plan</h4>
-            <p class="motion-item__desc">The current plan expires in 2026 — an election year. There is no successor in sight, and no public discussion of what comes next. I flagged this in writing in 2023. The Township needs a proper strategic planning process: resident research first, a qualified firm to facilitate, and a Council-approved plan that looks further than the next election. This is the motion that starts it.</p>
+            <h4 class="motion-item__title">Community Centre and Museum usage, cost, and condition review</h4>
+            <p class="motion-item__desc">
+              Council should understand current usage levels, operating costs, capital needs, condition, and market value before making major decisions about the Community Centre or Museum.
+            </p>
             <a href="/docs/motions/motion%2018.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 18 (PDF) →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">19</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Recreation asset current and future usage study</h4>
+            <p class="motion-item__desc">
+              Before improving, replacing, or neglecting recreation assets, Council should understand how they are used today, what future usage could look like, what condition they are in, and what improvements would cost.
+            </p>
+            <a href="/docs/motions/motion%2019.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 19 (PDF) →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">20</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Community Hub feasibility at Heritage Park</h4>
+            <p class="motion-item__desc">
+              Motion 18 asks what the current facilities are costing and how they are used today. This motion asks what the future could look like — whether a consolidated Community Hub at Heritage Park could serve residents better than replacing aging facilities one by one.
+            </p>
+            <a href="/docs/motions/motion%2020.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 20 (PDF) →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">21</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Recreation Coordinator feasibility study</h4>
+            <p class="motion-item__desc">
+              Council should understand whether a part-time or full-time Recreation Coordinator could increase programming, facility use, grants, and revenue before making a hiring decision.
+            </p>
+            <a href="/docs/motions/motion%2021.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 21 (PDF) →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="motion-item">
+        <div class="motion-item__header">
+          <span class="motion-item__num">22</span>
+          <div class="motion-item__body">
+            <h4 class="motion-item__title">Engage a firm to develop a long-term Strategic Plan</h4>
+            <p class="motion-item__desc">
+              The Township needs a proper strategic planning process: resident research first, a qualified firm to facilitate, and a Council-approved plan that looks beyond the next election.
+            </p>
+            <a href="/docs/motions/motion%2022.pdf" target="_blank" rel="noopener" class="card__link" style="display:inline-block;margin-top:0.75rem;">Download Motion 22 (PDF) →</a>
           </div>
         </div>
       </div>
@@ -506,7 +595,7 @@
         <span class="section__eyebrow">Ready to go</span>
         <h2 class="section__title" style="max-width:14ch;">A plan is only as good as the person willing to move it.</h2>
         <p class="section__lead">
-          These motions exist because I wrote them. They are specific because vague intentions do not change anything. And they are ready because I have been preparing for this for four years — from outside the room.
+          These motions exist because I wrote them. They are specific because vague intentions do not change anything. And they are ready because I have been preparing for this for years — from outside the room.
         </p>
         <div style="display:flex;gap:0.9rem;flex-wrap:wrap;">
           <a href="platform.html" class="btn btn-dark">Read the platform</a>
