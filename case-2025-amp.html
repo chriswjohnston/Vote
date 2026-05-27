@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Asset Management Plan — Chris Johnston for Nipissing Township Council</title>
+  <meta name="description" content="Council passed a by-law adopting the 2025 Asset Management Plan. The document on the Township website is not the document council adopted. Staff confirmed this is intentional." />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .evidence-stack { display: flex; flex-direction: column; gap: 1.5rem; }
+    .evidence {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 1.25rem;
+      background: linear-gradient(180deg,#fff 0%,#faf6f0 100%);
+      border: 1px solid rgba(7,29,59,0.08);
+      border-left: 4px solid var(--secondary);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(7,29,59,0.06);
+    }
+    .evidence--alert {
+      border-left-color: #991b1b;
+      background: linear-gradient(180deg,#fff 0%,#fdf8f8 100%);
+    }
+    .evidence__num {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--secondary);
+      line-height: 1;
+      padding-top: 0.1rem;
+    }
+    .evidence--alert .evidence__num { color: #991b1b; }
+    .evidence__title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+    .evidence__body {
+      font-size: 0.96rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+    }
+    .evidence__body p + p { margin-top: 0.65rem; }
+    .evidence__body strong { color: var(--ink); font-weight: 700; }
+    .evidence__tag {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: rgba(154,91,19,0.10);
+      color: var(--secondary);
+    }
+    .evidence--alert .evidence__tag {
+      background: rgba(153,27,27,0.10);
+      color: #991b1b;
+    }
+    .quote-block {
+      margin: 1rem 0;
+      padding: 1.25rem 1.5rem;
+      background: rgba(7,29,59,0.04);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+    .quote-block__label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--ink-soft);
+      margin-bottom: 0.55rem;
+    }
+    .quote-block__text {
+      font-size: 0.96rem;
+      color: var(--ink);
+      line-height: 1.7;
+      font-style: italic;
+    }
+    .quote-block__source {
+      font-size: 0.76rem;
+      color: var(--ink-soft);
+      margin-top: 0.5rem;
+      font-weight: 700;
+    }
+    .response-block {
+      background: linear-gradient(180deg,#fff 0%,#f8f3ed 100%);
+      border: 1px solid rgba(7,29,59,0.08);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(7,29,59,0.06);
+    }
+    .response-block__label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--secondary);
+      margin-bottom: 0.85rem;
+    }
+    .response-block__text {
+      font-size: 0.94rem;
+      color: var(--ink-soft);
+      line-height: 1.75;
+      border-left: 3px solid rgba(7,29,59,0.12);
+      padding-left: 1rem;
+      font-style: italic;
+    }
+    .col-50 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start; }
+    .ref-card {
+      background: rgba(153,27,27,0.04);
+      border: 1px solid rgba(153,27,27,0.12);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .ref-card__page {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #991b1b;
+      margin-bottom: 0.45rem;
+    }
+    .ref-card__quote {
+      font-size: 0.92rem;
+      color: var(--ink);
+      font-style: italic;
+      line-height: 1.65;
+      font-weight: 600;
+    }
+    .ref-card__note {
+      font-size: 0.82rem;
+      color: var(--ink-soft);
+      margin-top: 0.55rem;
+      line-height: 1.6;
+    }
+    .pattern-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+    .pattern-card {
+      background: linear-gradient(180deg,#fff 0%,#faf6f0 100%);
+      border: 1px solid rgba(7,29,59,0.08);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      box-shadow: 0 8px 24px rgba(7,29,59,0.06);
+    }
+    .pattern-card__label {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      margin-bottom: 0.6rem;
+    }
+    .pattern-card h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+    .pattern-step {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.65rem;
+    }
+    .pattern-step__arrow {
+      font-size: 0.8rem;
+      color: var(--secondary);
+      font-weight: 800;
+      margin-top: 0.15rem;
+      flex-shrink: 0;
+    }
+    .pattern-step__text {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+    .pattern-step__text strong { color: var(--ink); font-weight: 700; }
+    .appendix-card {
+      background: linear-gradient(135deg,var(--primary) 0%,var(--primary-2) 100%);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      color: #fff;
+      box-shadow: 0 18px 44px rgba(7,29,59,0.18);
+    }
+    .appendix-card__eyebrow {
+      font-size: 0.68rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--secondary-soft);
+      margin-bottom: 1rem;
+    }
+    .appendix-card__row {
+      border-bottom: 1px solid rgba(255,255,255,0.09);
+      padding-bottom: 0.85rem;
+      margin-bottom: 0.85rem;
+    }
+    .appendix-card__row:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
+    .appendix-card__row strong { font-size: 0.84rem; font-weight: 700; color: #fff; display: block; margin-bottom: 0.3rem; }
+    .appendix-card__row p { font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.55; margin: 0; }
+    @media (max-width: 900px) {
+      .col-50, .pattern-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .evidence { grid-template-columns: 1fr; }
+      .evidence__num { display: none; }
+    }
+  </style>
+</head>
+<body class="page-body">
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__wordmark">Chris Johnston<span>Nipissing Township Council · 2026</span></a>
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li class="nav__item">
+        <a href="challenges.html" class="active">Challenges</a>
+        <ul class="nav__dropdown">
+          <li><a href="case-2021-cao.html">CAO Recruitment</a></li>
+          <li><a href="case-townsuite.html">TownSuite</a></li>
+          <li><a href="case-2026-landfill.html">Landfill Cards</a></li>
+          <li><a href="case-2025-amp.html">Asset Management Plan</a></li>
+        </ul>
+      </li>
+      <li class="nav__item">
+        <a href="platform.html">Platform</a>
+      </li>
+      <li><a href="election-day.html">Election Day</a></li>
+      <li><a href="contact.html" class="nav__cta">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ══ HERO ══════════════════════════════════════════════════ -->
+<header class="page-hero page-hero--platform">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__grid">
+    <div>
+      <a href="challenges.html" class="card__link" style="margin-bottom:1rem; display:inline-block;">← Back to Challenges</a>
+      <span class="page-kicker">Case Study · November 2025 · Document Integrity</span>
+      <h1>The Document Council Adopted Is Not the Document on the Website</h1>
+      <p class="page-hero__lead">On November 18, 2025, council passed a by-law adopting the 2025 Asset Management Plan. That document included Appendix B — a detailed inventory of every asset the Township owns. The document posted publicly on the Township website omits it entirely. Staff confirmed this was intentional. Council was not asked.</p>
+    </div>
+    <aside class="page-hero__aside">
+      <h2>What the record shows</h2>
+      <div class="page-hero__chips">
+        <span class="page-hero__chip">By-law adopted full document</span>
+        <span class="page-hero__chip">Website shows different version</span>
+        <span class="page-hero__chip">Document refers to missing content three times</span>
+        <span class="page-hero__chip">Staff confirmed intentional</span>
+        <span class="page-hero__chip">Council was not informed</span>
+      </div>
+      <p>This is not a complex file. A by-law adopts a document. A different version is published. The document itself points to the missing section. When asked, staff explained why — but their explanation answers a different question than the one that matters.</p>
+    </aside>
+  </div>
+</header>
+
+
+<!-- ══ OVERLAP ════════════════════════════════════════════════ -->
+<section class="about-overlap" aria-label="Case summary">
+  <div class="about-overlap__inner" style="grid-template-columns:repeat(3,1fr);">
+    <div class="about-stat">
+      <strong>November 18, 2025</strong>
+      <span>Council passes By-Law 2025-32 adopting the Asset Management Plan — including Appendix B</span>
+    </div>
+    <div class="about-stat">
+      <strong>The website version</strong>
+      <span>Appendix B is absent. No note. No explanation. The table of contents doesn't list it. Three internal references lead nowhere.</span>
+    </div>
+    <div class="about-stat">
+      <strong>The Administrator's response</strong>
+      <span>Appendix B was withheld intentionally — for internal use and because the data will change. Council was not part of that decision.</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SECTION 1: THE EVIDENCE ════════════════════════════════ -->
+<section class="section section--warm">
+  <div class="container">
+    <span class="section__eyebrow">What the public record shows · Six documented facts</span>
+    <h2 class="section__title">The Evidence, Point by Point</h2>
+    <p class="section__lead" style="max-width:62ch;">Every claim on this page is sourced to a specific document in the public record. The by-law, the agenda package, the published AMP, and the email exchange are all linked below.</p>
+
+    <div class="evidence-stack">
+
+      <div class="evidence">
+        <div class="evidence__num">1</div>
+        <div>
+          <div class="evidence__title">What council adopted on November 18, 2025</div>
+          <div class="evidence__body">
+            <p>Council passed By-Law 2025-32 on November 18, 2025 — R2025-213, moved by S. Kirkey, seconded by J. Scott — to adopt an Asset Management Plan for the Township of Nipissing. The motion carried unanimously.</p>
+            <p>The document presented to council at that meeting — included in the publicly available Agenda Package for November 18, 2025 — contained eight chapters, Appendix A, and <strong>Appendix B: Asset Inventory Details</strong>. Appendix B ran four tables across five pages: Table B.1 (Roads), Table B.2 (Bridges and Culverts), Table B.3 (Facilities and Land Improvements), and Table B.4 (Fleet and Equipment).</p>
+            <p>That is the document the by-law adopted.</p>
+            <span class="evidence__tag">Source: November 18, 2025 Agenda Package · By-Law 2025-32 · R2025-213</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="evidence">
+        <div class="evidence__num">2</div>
+        <div>
+          <div class="evidence__title">What is posted on the Township website</div>
+          <div class="evidence__body">
+            <p>The Township's Asset Management Plan page at nipissingtownship.com links to a PDF titled "2025 Asset Management Plan." That document contains eight chapters and Appendix A only. Appendix B does not appear. The table of contents lists Appendix A and stops. There is no note that Appendix B was excluded, no explanation that it was modified from the adopted version, and no link to the full document elsewhere.</p>
+            <p>A resident who goes to the Township website to read what council adopted is reading a different document than the one council passed a by-law to adopt.</p>
+            <span class="evidence__tag">Source: nipissingtownship.com/other/asset-management-plan/</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="evidence evidence--alert">
+        <div class="evidence__num">3</div>
+        <div>
+          <div class="evidence__title">The posted document refers to Appendix B three times — and it isn't there</div>
+          <div class="evidence__body">
+            <p>The version posted on the Township website references Appendix B at three specific points. In each case, a reader is directed to content that does not exist in the document they are reading.</p>
+          </div>
+          <span class="evidence__tag">Three references to missing content</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:1.5rem;margin-bottom:2rem;">
+      <div class="ref-card">
+        <div class="ref-card__page">Page 18 — Chapter 4: Bridges and Culverts, Table 4.1</div>
+        <div class="ref-card__quote">"Details on assets in this class are provided in Appendix B."</div>
+        <div class="ref-card__note">A resident reading about the Hummel Bridge, the Bear Creek culvert, or any other bridge asset is directed here for the detailed inventory. Appendix B is not in the document.</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card__page">Page 37 — Chapter 6: Fleet and Equipment, Table 6.5 note</div>
+        <div class="ref-card__quote">"Key considerations outlined in the Appendix include a decision to not replace the Administration SUV, and rather allocate those funds to a larger, 4-door pickup truck that can address Administration and Fire personnel transportation needs."</div>
+        <div class="ref-card__note">A specific fleet decision — one that affects the 2026 budget — is attributed to Appendix B as its basis. A resident cannot verify this decision without the appendix.</div>
+      </div>
+      <div class="ref-card">
+        <div class="ref-card__page">Page 37 — Chapter 6: Fleet and Equipment, Asset Financial Requirements</div>
+        <div class="ref-card__quote">"...based on cost projections detailed in Appendix B."</div>
+        <div class="ref-card__note">The entire fleet cost table — the numbers the Township uses to plan vehicle replacements — is sourced to Appendix B. Those projections are the basis for capital spending decisions. A resident reading this table has no way to verify the numbers behind it.</div>
+      </div>
+    </div>
+
+    <div class="evidence-stack">
+
+      <div class="evidence">
+        <div class="evidence__num">4</div>
+        <div>
+          <div class="evidence__title">The Administrator's response</div>
+          <div class="evidence__body">
+            <p>A letter was sent to the Municipal Administrator asking why Appendix B was absent from the published document. Her response, received in April 2026:</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="response-block" style="margin-bottom:1.5rem;">
+      <div class="response-block__label">Municipal Administrator · Kris Croskery-Hodgins · Response to inquiry</div>
+      <div class="response-block__text">
+        "Appendix B is a technical listing of items included elsewhere in the Asset Management Document, Capital Forecast and other documents such as Road Needs Study. It is proposed for internal use for reporting and applying for grants. The Asset Management Plan posting requirements do not include Appendix B information therefore it was not included in the final document. The information is subject to change when equipment is purchased, facilities renewed and road construction completed."
+      </div>
+    </div>
+
+    <div class="evidence-stack">
+
+      <div class="evidence evidence--alert">
+        <div class="evidence__num">5</div>
+        <div>
+          <div class="evidence__title">Why the response answers a different question</div>
+          <div class="evidence__body">
+            <p>The Administrator's response explains why staff chose not to post Appendix B. That may be a reasonable administrative judgment. But it does not address the question that matters: <strong>is the document posted on the Township website the same document council adopted by by-law?</strong> It is not.</p>
+            <p>Three specific points in her rationale don't hold up against the public record:</p>
+            <p><strong>1. "It is proposed for internal use."</strong> Appendix B is already in the November 18, 2025 Agenda Package — a document published on the Township website and accessible to any resident. It was never confidential. Calling it internal-use doesn't make it so.</p>
+            <p><strong>2. "The information is subject to change."</strong> Page ii of the Asset Management Plan — the version council adopted — contains this statement in the Disclaimer and Notices: <em>"It reflects the best available information at the time of publication and is intended to be a living document that will evolve as better data and methods become available."</em> The "it will change" rationale is addressed in the document itself. That disclaimer exists precisely because asset management data is imperfect and evolving. It was placed there to justify publishing imperfect data — not to justify withholding it.</p>
+            <p><strong>3. "Posting requirements do not include Appendix B."</strong> This may be accurate under O. Reg. 588/17. But the question is not what posting rules permit. The question is whether the document that O. Reg. 588/17 requires to be made available to the public is the same document council adopted. It isn't. By-Law 2025-32 adopted a document that included Appendix B. The document available to the public does not.</p>
+            <span class="evidence__tag">The question that remains unanswered</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="evidence">
+        <div class="evidence__num">6</div>
+        <div>
+          <div class="evidence__title">A commitment the document made — and then broke from the first day</div>
+          <div class="evidence__body">
+            <p>The AMP's own disclaimer on page ii makes a specific commitment about how it will be maintained: <em>"Updates to the AMP will continue to improve the quality of data and projections over time."</em></p>
+            <p>If the plan is for staff to maintain an internal working version of Appendix B while the public website holds a static version without it — and without noting that it is incomplete — then the "living document" commitment in the disclaimer is not being honoured. The public version was already incomplete on the day it was posted. There is no indication it will be updated as equipment is replaced, facilities renewed, or road construction completed.</p>
+            <p>What residents will actually see is the same partial document aging on the website until O. Reg. 588/17 requires the next formal update — years from now.</p>
+            <span class="evidence__tag">Source: 2025 AMP, Page ii — Disclaimer and Notices</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SECTION 2: THE PATTERN ═════════════════════════════════ -->
+<section class="section section--navy">
+  <div class="container">
+    <span class="section__eyebrow section__eyebrow--light">Context · This Has Happened Before</span>
+    <h2 class="section__title section__title--light">This Is the Second Time in 2025–2026</h2>
+    <p class="section__lead section__lead--light" style="max-width:65ch;">
+      This is not the first time council has approved something and staff has implemented it differently — without council being asked, informed, or on record as having agreed to the change. The Landfill Card case study documents the same pattern from earlier this year.
+    </p>
+
+    <div class="pattern-grid" style="margin-top:2rem;margin-bottom:2rem;">
+
+      <div class="pattern-card">
+        <div class="pattern-card__label">Landfill Card System · January–April 2026</div>
+        <h3>Council sets a deadline. Staff misses it. Council changes the decision without asking why.</h3>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>January 6, 2026:</strong> Council approves electronic landfill cards with a hard start date of April 1, 2026.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>March 28, 2026:</strong> Direct questions about the missed timeline are put to council in a letter read into the record.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>April 1, 2026:</strong> The deadline passes. No implementation. No public update from council.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>April 7, 2026:</strong> Staff asks council to rescind the resolution and delay to September. Council approves — no questions asked, no answers given.</div>
+        </div>
+        <a href="case-2026-landfill.html" class="card__link" style="display:inline-flex;align-items:center;gap:0.4rem;margin-top:0.75rem;">Read the Landfill Card case study →</a>
+      </div>
+
+      <div class="pattern-card">
+        <div class="pattern-card__label">Asset Management Plan · November 2025 – April 2026</div>
+        <h3>Council adopts a document by by-law. Staff posts a different version. Council is not informed.</h3>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>November 18, 2025:</strong> Council passes By-Law 2025-32 adopting the full AMP — including Appendix B.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>Post-November 2025:</strong> Staff posts a version without Appendix B on the Township website. No note. No explanation. Three internal references in the document lead nowhere.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>April 2026:</strong> A resident finds the discrepancy by following an internal reference and contacts the Administrator.</div>
+        </div>
+        <div class="pattern-step">
+          <div class="pattern-step__arrow">→</div>
+          <div class="pattern-step__text"><strong>April 2026:</strong> Administrator confirms it was intentional. Council has not been asked whether this is acceptable.</div>
+        </div>
+        <p style="font-size:0.84rem;color:var(--ink-soft);margin-top:0.75rem;line-height:1.6;font-style:italic;">You are reading this case study now.</p>
+      </div>
+
+    </div>
+
+    <div class="callout-banner">
+      <h3 style="font-size:1.05rem;line-height:1.35;color:#fff;">In the landfill case, council set a deadline and didn't follow up when it was missed. In the AMP case, council adopted a document and didn't notice when a different version was published. These are not complex problems. They are the direct result of council not asking questions — and not having a system that requires it to.</h3>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SECTION 3: WHAT'S IN APPENDIX B ═══════════════════════ -->
+<section class="section section--warm">
+  <div class="container">
+    <span class="section__eyebrow">What residents can't see · Appendix B: Asset Inventory Details</span>
+    <h2 class="section__title">What the Withheld Appendix Actually Contains</h2>
+    <p class="section__lead" style="max-width:64ch;">
+      The Administrator described Appendix B as a "technical listing." That's accurate — but it understates what the information is. This is the asset-by-asset detail that underpins every capital planning decision the Township makes. It is available in the November 18 Agenda Package. Here is what it contains.
+    </p>
+
+    <div class="col-50" style="margin-bottom:2rem;">
+      <div>
+        <div class="callout" style="margin-bottom:1.25rem;">
+          Appendix B covers four tables across five pages: every road category, every bridge and culvert, every building and facility, and every vehicle — each with its age, condition notes, replacement cost estimate, and planned lifecycle timeline.
+        </div>
+
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;margin-bottom:1rem;">The detail matters because it is what connects the AMP's high-level financial commitments to the specific assets behind them. When the AMP says Bridges and Culverts need $1M in 2026 and $594K per year through 2031, Appendix B is where you find out which bridges, in what condition, at what estimated cost, scheduled for what year.</p>
+
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;margin-bottom:1rem;">It is also the source document for specific budget decisions referenced in the posted AMP — including the fleet decision on page 37 that is described as being "outlined in the Appendix." A resident reading the budget cannot verify that decision without Appendix B.</p>
+
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;">Appendix B is available — in the November 18, 2025 Agenda Package on the Township website. It was never confidential. A resident who knows to look for it in the Agenda Package can find it. A resident who goes to the Asset Management Plan page expecting to read what council adopted cannot.</p>
+      </div>
+
+      <div>
+        <div class="appendix-card">
+          <div class="appendix-card__eyebrow">What Appendix B Documents</div>
+
+          <div class="appendix-card__row">
+            <strong>Table B.1 — Roads</strong>
+            <p>Three road categories with current replacement value, length, overall condition rating, and noted deficiencies. Total replacement value: ~$30.9M.</p>
+          </div>
+
+          <div class="appendix-card__row">
+            <strong>Table B.2 — Bridges &amp; Culverts</strong>
+            <p>12 structures: name, replacement value, dimensions, age, condition details, and lifecycle plan. Includes Hummel Bridge (closed, $4M replacement 2027–2031), Bear Creek culvert ($1M 2026), and Hart Boundary culvert ($439K 2027–2028).</p>
+          </div>
+
+          <div class="appendix-card__row">
+            <strong>Table B.3 — Facilities &amp; Land Improvements</strong>
+            <p>21 assets: every building and land improvement with address, age, condition notes, and lifecycle plan. Confirms the Township Office and Public Works Garage replacement is one $4M project planned for 2035 — replacing three structures together.</p>
+          </div>
+
+          <div class="appendix-card__row">
+            <strong>Table B.4 — Fleet &amp; Equipment</strong>
+            <p>19 vehicles and pieces of equipment with current replacement value, age, location, and planned replacement year and cost. This is the table the AMP explicitly references as the source for fleet cost projections.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SECTION 4: THE FIX ═════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <span class="section__eyebrow">What should happen · One resolution</span>
+    <h2 class="section__title">The Fix Is Simple</h2>
+    <p class="section__lead" style="max-width:60ch;">This is not a complicated problem. It does not require an audit, a legal opinion, or a budget. It requires council to be told what happened — and to decide whether it is acceptable.</p>
+
+    <div class="col-50">
+      <div>
+        <h3 style="font-family:'Public Sans',sans-serif;font-size:1.1rem;font-weight:800;color:var(--primary);margin-bottom:0.75rem;">What I would bring to council</h3>
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;margin-bottom:1rem;">A motion directing staff to post the complete Asset Management Plan — the version adopted by By-Law 2025-32 on November 18, 2025, including Appendix B — on the Township website, and to note clearly when the document was last updated and what changes were made.</p>
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;margin-bottom:1rem;">If council decides Appendix B should remain withheld, that is a council decision — made publicly, on the record, with an explanation residents can read. What is not acceptable is a decision made by staff, after a by-law was passed, without council being asked.</p>
+        <p style="font-size:0.96rem;color:var(--ink-soft);line-height:1.75;">This also connects to the broader commitment to consistent documentation: the reserve naming convention, the plain language budget letter, and the complete reserve schedule in every budget. These are not complicated things. They require council to set the standard — and staff to implement it.</p>
+      </div>
+      <div>
+        <div class="callout">
+          The AMP's own disclaimer on page ii promises a living document updated as better data becomes available. That promise requires the document to be posted in full, updated publicly when it changes, and consistent with what council adopted. Right now, none of those things are true.
+        </div>
+        <div style="margin-top:1.25rem;padding:1.25rem;background:rgba(7,29,59,0.05);border-radius:var(--radius-md);">
+          <div style="font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--secondary);margin-bottom:0.6rem;">Related commitments</div>
+          <div style="display:flex;flex-direction:column;gap:0.5rem;">
+            <a href="platform.html" class="card__link">Motion 03 · Standardize reserve naming and document consistency →</a>
+            <a href="platform.html" class="card__link">Motion 15 · Plain language budget letter — what changed and why →</a>
+            <a href="platform.html" class="card__link">Motion 16 · Reserve naming convention across all documents →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ SECTION 5: DOCS ════════════════════════════════════════ -->
+<section class="section section--navy">
+  <div class="container">
+    <span class="section__eyebrow section__eyebrow--light">Supporting documents</span>
+    <h2 class="section__title section__title--light">Read the Record Yourself</h2>
+    <div class="doc-grid" style="grid-template-columns:repeat(2,1fr);">
+
+      <div class="doc-card">
+        <div class="doc-card__header">
+          <div class="doc-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="doc-card__meta">
+            <span class="doc-card__label">Agenda Package · November 18, 2025</span>
+            <span class="doc-card__title">The Full AMP — Including Appendix B</span>
+          </div>
+        </div>
+        <div class="doc-card__body">
+          <p class="doc-card__finding">This is the document council had in front of them when they passed By-Law 2025-32. Appendix B begins on page 52. It is publicly available — it has always been publicly available — on the Township website as part of this agenda package.</p>
+          <a href="https://nipissingtownship.com/wp-content/uploads/2025/11/Agenda-Package-November-18-2025.pdf" target="_blank" rel="noopener" class="doc-card__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open November 18, 2025 Agenda Package →
+          </a>
+        </div>
+      </div>
+
+      <div class="doc-card doc-card--highlight">
+        <div class="doc-card__header">
+          <div class="doc-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div class="doc-card__meta">
+            <span class="doc-card__label">Township Website · Asset Management Plan Page</span>
+            <span class="doc-card__title">The Published Version — Without Appendix B</span>
+          </div>
+        </div>
+        <div class="doc-card__body">
+          <p class="doc-card__finding">This is what a resident finds when they visit the Township's AMP page. Compare page 18 (Table 4.1) and page 37 (Table 6.5 notes) of this document to the same pages in the agenda package version. The references to Appendix B are there. The appendix is not.</p>
+          <a href="https://nipissingtownship.com/other/asset-management-plan/" target="_blank" rel="noopener" class="doc-card__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Open Township AMP page →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══ CTA ════════════════════════════════════════════════════ -->
+<section class="section section--cta-photo">
+  <div class="container">
+    <div class="cta-photo">
+      <div class="cta-photo__media" aria-hidden="true"></div>
+      <div class="cta-photo__body">
+        <span class="section__eyebrow">What this points to</span>
+        <h2 class="section__title" style="max-width:14ch;">Council passed a by-law. The public got a different document.</h2>
+        <p class="section__lead">This is not a technical issue. When council adopts a document by by-law and a different version is published, residents are reading something other than what their elected council approved. That gap — between what council decides and what residents can see — is the governance problem this campaign is about.</p>
+        <div style="display:flex;gap:0.9rem;flex-wrap:wrap;">
+          <a href="challenges.html" class="btn btn-dark">Back to Challenges</a>
+          <a href="platform.html" class="btn btn-ghost-dark">Read the Platform</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<script src="nav.js"></script>
+</body>
+</html>

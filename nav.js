@@ -17,6 +17,7 @@
         { href: 'case-2022-software.html', label: 'Municipal Software' },
         { href: 'case-2023-strategic.html', label: 'Strategic Plan' },
         { href: 'case-2026-landfill.html', label: 'Landfill Card Delay' },
+        { href: 'case-2025-amp.html', label: 'Asset Management Plan' },
         { href: 'case-boards-committees.html', label: 'Boards & Committees' },
       ],
     },
