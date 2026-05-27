@@ -197,51 +197,23 @@
       color: var(--secondary-soft);
       margin-bottom: 1rem;
     }
-    .appendix-card__row {
-      border-bottom: 1px solid rgba(255,255,255,0.09);
-      padding-bottom: 0.85rem;
-      margin-bottom: 0.85rem;
-    }
+    .appendix-card__row { border-bottom: 1px solid rgba(255,255,255,0.09); padding-bottom: 0.85rem; margin-bottom: 0.85rem; }
     .appendix-card__row:last-child { border-bottom: 0; padding-bottom: 0; margin-bottom: 0; }
     .appendix-card__row strong { font-size: 0.84rem; font-weight: 700; color: #fff; display: block; margin-bottom: 0.3rem; }
     .appendix-card__row p { font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.55; margin: 0; }
-    @media (max-width: 900px) {
-      .col-50, .pattern-grid { grid-template-columns: 1fr; }
+    @media (max-width: 860px) {
+      .col-50,
+      .pattern-grid { grid-template-columns: 1fr; }
     }
     @media (max-width: 600px) {
       .evidence { grid-template-columns: 1fr; }
       .evidence__num { display: none; }
+      .doc-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
 <body class="page-body">
 
-<nav class="nav">
-  <div class="nav__inner">
-    <a href="index.html" class="nav__wordmark">Chris Johnston<span>Nipissing Township Council · 2026</span></a>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li class="nav__item">
-        <a href="challenges.html" class="active">Challenges</a>
-        <ul class="nav__dropdown">
-          <li><a href="case-2021-cao.html">CAO Recruitment</a></li>
-          <li><a href="case-townsuite.html">TownSuite</a></li>
-          <li><a href="case-2026-landfill.html">Landfill Cards</a></li>
-          <li><a href="case-2025-amp.html">Asset Management Plan</a></li>
-        </ul>
-      </li>
-      <li class="nav__item">
-        <a href="platform.html">Platform</a>
-      </li>
-      <li><a href="election-day.html">Election Day</a></li>
-      <li><a href="contact.html" class="nav__cta">Contact</a></li>
-    </ul>
-    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
 
 
 <!-- ══ HERO ══════════════════════════════════════════════════ -->
