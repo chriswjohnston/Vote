@@ -115,6 +115,7 @@
             return `<li><a href="${item.href}">${item.label}</a></li>`;
           }).join('')}
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="../">All campaigns</a></li>
         </ul>
 
         <div class="site-footer__legal">
