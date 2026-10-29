@@ -19,3 +19,4 @@ ol.history li.current::before{background:var(--gold);border-color:var(--primary)
 .btn{display:inline-block;margin-top:.75rem;padding:.6rem 1.1rem;background:var(--primary);color:#fff;text-decoration:none;font-weight:700;border-radius:4px}
 .btn:hover{background:#0c2d57}
 footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem}
+.sub a{font-weight:600}
